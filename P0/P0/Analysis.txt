@@ -1,0 +1,16 @@
+The Time Complexity of each task(Worst Case Big O Notation)
+
+1. Task 0
+The Order is O(1), since it has only 2 lines.
+
+2. Task 1
+The Order is O(n), since it has 2 loops, and each loop has nested loop but only the outside is influenced by n, while inside is always 2 times. So the total order is O(2n) + O(2n) = O(n).
+
+3. Task 2
+The order is O(n), since it has 1 loop, ant the loop has a nested loop but only the outside is influenced by n, while inside is always 2 times. So the total order is O(2n) = O(n).
+
+4. Task 3
+The order is O(nlog(n)), since it has nested loops. The main function has a loop of n, while in the loop it calls a function where the dictionary checking inside is considered O(1). And after the main loop we also has a built-in sort() with O(nlog(n)). So the total order is O(nlog(n)) + O(n) = O(nlog(n)).
+
+5. Task 4
+The order is O(nlog(n)), since it has two loops of n, and for each loop it calls a function where the dictionary checking inside is considered O(1). And after the main loop we also has a built-in sort() cost O(nlog(n)). So the total order is O(nlog(n)) + O(n) = O(nlog(n)).
